@@ -2,3 +2,6 @@ venv/
 __pycahce__/
 *.py[cod]
 *$py.class
+
+# the DB
+src/db.sqlite3
