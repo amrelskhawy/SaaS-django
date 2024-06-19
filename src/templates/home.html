@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{page_title}}</title>
+</head>
+<body>
+    Hello World From Template
+    <p>
+        {% for req in queryset %}
+            <p>
+            <span>{{req.path}}</span>
+            <span>{{req.timestamp}}</span>
+    </p>
+        {% endfor %}
+    </p>
+</body>
+</html>
