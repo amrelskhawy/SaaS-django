@@ -18,8 +18,5 @@ def home_page_view(request, *args, **kwargs):
         path=request.path
     )
 
-    data = serializers.serialize('json', queryset)
-    return JsonResponse(data, safe=False)
-
     # return HttpResponse(json.dumps(queryset), content_type="application/json")
-    # return render(request, template_name="home.html", context=my_context)
+    return render(request, template_name="home.html", context=my_context)
