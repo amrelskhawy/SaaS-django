@@ -7,12 +7,9 @@
 <body>
     Hello World From Template
     <p>
-        {% for req in queryset %}
-            <p>
-            <span>{{req.path}}</span>
-            <span>{{req.timestamp}}</span>
+        Number of Visitors: {{ queryset }}
     </p>
-        {% endfor %}
+
     </p>
 </body>
 </html>

@@ -11,7 +11,7 @@ def home_page_view(request, *args, **kwargs):
 
     my_context = {
         "page_title": my_title,
-        "queryset": queryset,
+        "queryset": queryset.count(),
     }
 
     Visit.objects.create(
